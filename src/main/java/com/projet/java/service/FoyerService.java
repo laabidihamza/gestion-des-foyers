@@ -2,27 +2,58 @@ package com.projet.java.service;
 
 import com.projet.java.entity.Foyer;
 import com.projet.java.repository.FoyerRepository;
+import lombok.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import java.util.*;
 
 @Service
+@RequiredArgsConstructor
 public class FoyerService {
+    private final FoyerRepository foyerRepository;
 
-    @Autowired
-    private FoyerRepository foyerRepository;
-
-    public Foyer save(Foyer f) {
-        return foyerRepository.save(f);
+    // Create
+    public Foyer saveFoyer(Foyer foyer) {
+        return foyerRepository.save(foyer);
     }
 
-    public List<Foyer> getAll() {
+    // Read
+    public List<Foyer> getAllFoyers() {
         return foyerRepository.findAll();
     }
 
-    public void delete(Long id) {
+    public Optional<Foyer> getFoyerById(Long id) {
+        return foyerRepository.findById(id);
+    }
+
+    // Update
+    public Foyer updateFoyer(Foyer foyer) {
+        return foyerRepository.save(foyer);
+    }
+
+    // Delete
+    public void deleteFoyer(Long id) {
         foyerRepository.deleteById(id);
     }
 }
+
+//@Service
+//public class FoyerService {
+//
+//    @Autowired
+//    private FoyerRepository foyerRepository;
+//
+//    public Foyer save(Foyer f) {
+//        return foyerRepository.save(f);
+//    }
+//
+//    public List<Foyer> getAll() {
+//        return foyerRepository.findAll();
+//    }
+//
+//    public void delete(Long id) {
+//        foyerRepository.deleteById(id);
+//    }
+//}
 
