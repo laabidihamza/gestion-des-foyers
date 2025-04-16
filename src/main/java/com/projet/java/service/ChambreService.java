@@ -51,21 +51,3 @@ public class ChambreService {
     }
 }
 
-//@Service
-//public class ChambreService {
-//
-//    @Autowired
-//    private ChambreRepository chambreRepository;
-//
-//    public Chambre save(Chambre c) {
-//        return chambreRepository.save(c);
-//    }
-//
-//    public List<Chambre> getAll() {
-//        return chambreRepository.findAll();
-//    }
-//
-//    public void delete(Long id) {
-//        chambreRepository.deleteById(id);
-//    }
-//}

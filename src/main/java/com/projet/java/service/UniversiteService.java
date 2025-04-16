@@ -37,21 +37,3 @@ public class UniversiteService {
         universiteRepository.deleteById(id);
     }
 }
-
-//@Service
-//public class UniversiteService {
-//
-//    @Autowired
-//    private UniversiteRepository universiteRepository;
-//
-//    public Universite save(Universite u) {
-//        return universiteRepository.save(u);
-//    }
-//
-//    public List<Universite> getAll() {
-//        return universiteRepository.findAll();
-//    }
-//
-//    public void delete(Long id) {
-//        universiteRepository.deleteById(id);
-//    }

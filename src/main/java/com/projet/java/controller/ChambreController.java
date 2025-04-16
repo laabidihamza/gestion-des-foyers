@@ -59,26 +59,3 @@ public class ChambreController {
         return ResponseEntity.noContent().build();
     }
 }
-
-//@RestController
-//@RequestMapping("/chambres")
-//public class ChambreController {
-//
-//    @Autowired
-//    private ChambreService chambreService;
-//
-//    @PostMapping
-//    public Chambre addChambre(@RequestBody Chambre chambre) {
-//        return chambreService.save(chambre);
-//    }
-//
-//    @GetMapping
-//    public List<Chambre> getAllChambres() {
-//        return chambreService.getAll();
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    public void deleteChambre(@PathVariable Long id) {
-//        chambreService.delete(id);
-//    }
-//}

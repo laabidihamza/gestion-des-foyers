@@ -37,22 +37,3 @@ public class EtudiantService {
         etudiantRepository.deleteById(id);
     }
 }
-
-//@Service
-//public class EtudiantService {
-//
-//    @Autowired
-//    private EtudiantRepository etudiantRepository;
-//
-//    public Etudiant save(Etudiant e) {
-//        return etudiantRepository.save(e);
-//    }
-//
-//    public List<Etudiant> getAll() {
-//        return etudiantRepository.findAll();
-//    }
-//
-//    public void delete(Long id) {
-//        etudiantRepository.deleteById(id);
-//    }
-//}

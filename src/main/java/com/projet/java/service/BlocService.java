@@ -37,22 +37,3 @@ public class BlocService {
         blocRepository.deleteById(id);
     }
 }
-
-//@Service
-//public class BlocService {
-//
-//    @Autowired
-//    private BlocRepository blocRepository;
-//
-//    public Bloc save(Bloc b) {
-//        return blocRepository.save(b);
-//    }
-//
-//    public List<Bloc> getAll() {
-//        return blocRepository.findAll();
-//    }
-//
-//    public void delete(Long id) {
-//        blocRepository.deleteById(id);
-//    }
-//}

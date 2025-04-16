@@ -51,26 +51,3 @@ public class ReservationController {
         return ResponseEntity.noContent().build();
     }
 }
-
-//@RestController
-//@RequestMapping("/reservations")
-//public class ReservationController {
-//
-//    @Autowired
-//    private ReservationService reservationService;
-//
-//    @PostMapping
-//    public Reservation addReservation(@RequestBody Reservation reservation) {
-//        return reservationService.save(reservation);
-//    }
-//
-//    @GetMapping
-//    public List<Reservation> getAllReservations() {
-//        return reservationService.getAll();
-//    }
-//
-//    @DeleteMapping("/{id}")
-//    public void deleteReservation(@PathVariable Long id) {
-//        reservationService.delete(id);
-//    }
-//}

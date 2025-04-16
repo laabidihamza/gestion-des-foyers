@@ -37,22 +37,3 @@ public class ReservationService {
         reservationRepository.deleteById(id);
     }
 }
-
-//@Service
-//public class ReservationService {
-//
-//    @Autowired
-//    private ReservationRepository reservationRepository;
-//
-//    public Reservation save(Reservation r) {
-//        return reservationRepository.save(r);
-//    }
-//
-//    public List<Reservation> getAll() {
-//        return reservationRepository.findAll();
-//    }
-//
-//    public void delete(Long id) {
-//        reservationRepository.deleteById(id);
-//    }
-//}
